@@ -1,3 +1,0 @@
-- [x] Translate all visible navigation, headings, buttons, section labels, and notifications into English.
-- [x] Update the HTML language, title, and meta description for the English site.
-- [x] Validate desktop and mobile rendering, then save the English website checkpoint.
