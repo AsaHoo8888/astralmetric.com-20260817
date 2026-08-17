@@ -20,7 +20,7 @@ import {
 import { toast } from "sonner";
 
 const assets = {
-  mark: "/manus-storage/astral-brand-mark_0c7028fd.png",
+  mark: "/manus-storage/astral-brand-mark-white_52916e21.png",
   hero: "/manus-storage/astral-hero-portal_0c0ed2f0.png",
   insight: "/manus-storage/astral-insight-signal_b526daaa.png",
   campaign: "/manus-storage/astral-campaign-current_871eebc9.png",
