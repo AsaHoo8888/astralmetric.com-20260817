@@ -1,3 +1,6 @@
+- [x] Remove unresolved VITE_ANALYTICS placeholders from the HTML entry point.
+- [x] Verify the pnpm 11 production build completes without analytics-variable warnings.
+- [x] Save the deployment-ready configuration update.
 - [x] Align the package-manager declaration with pnpm 11.22.0 used by deployment.
 - [x] Reinstall dependencies with the deployment-compatible pnpm version and run the production build.
 - [x] Save the corrected project version and provide updated deployment settings.
