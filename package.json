@@ -2,6 +2,7 @@
   "name": "astral-brand-onepager",
   "version": "1.0.0",
   "type": "module",
+  "author": "Astral",
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",

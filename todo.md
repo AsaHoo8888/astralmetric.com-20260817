@@ -1,3 +1,6 @@
+- [x] Add Astral as the author in website and project metadata.
+- [x] Verify the author tag is present after the production build.
+- [x] Save the updated author metadata version.
 - [x] Confirm the production build creates dist/index.js from server/index.ts.
 - [x] Verify that NODE_ENV=production node dist/index.js starts and serves the built site.
 - [x] Save the verified deployment-entry configuration.
