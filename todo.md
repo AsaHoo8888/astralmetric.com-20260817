@@ -1,3 +1,6 @@
+- [x] Align the package-manager declaration with pnpm 11.22.0 used by deployment.
+- [x] Reinstall dependencies with the deployment-compatible pnpm version and run the production build.
+- [x] Save the corrected project version and provide updated deployment settings.
 - [x] Translate all visible service copy, navigation, CTAs, and notifications into English.
 - [x] Update the document language, title, and SEO description for the English site.
 - [x] Validate the English desktop and mobile views, then save the updated version.
