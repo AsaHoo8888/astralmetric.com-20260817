@@ -1,3 +1,6 @@
+- [x] Translate all visible service copy, navigation, CTAs, and notifications into English.
+- [x] Update the document language, title, and SEO description for the English site.
+- [x] Validate the English desktop and mobile views, then save the updated version.
 - [x] 生成并应用纯白 Astral 标志，用于深色背景场景。
 - [x] 验证导航、首屏与页脚中的标志对比度，并保存更新版本。
 - [x] 更新服务架构，明确 SEO、GEO、Google Ads、Meta Ads 与数据分析能力。
