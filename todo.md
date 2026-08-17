@@ -1,3 +1,6 @@
+- [x] Confirm the production build creates dist/index.js from server/index.ts.
+- [x] Verify that NODE_ENV=production node dist/index.js starts and serves the built site.
+- [x] Save the verified deployment-entry configuration.
 - [x] Remove unresolved VITE_ANALYTICS placeholders from the HTML entry point.
 - [x] Verify the pnpm 11 production build completes without analytics-variable warnings.
 - [x] Save the deployment-ready configuration update.
