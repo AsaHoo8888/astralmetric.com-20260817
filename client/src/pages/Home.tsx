@@ -36,30 +36,38 @@ const capabilities = [
   {
     id: "01",
     icon: Crosshair,
-    title: "增长定位",
-    description: "把品牌价值、用户动机与竞争坐标收束成一条可执行的增长主线。",
-    note: "Brand / Audience / Category",
+    title: "SEO 搜索引擎优化",
+    description: "围绕搜索意图、内容结构与技术基础，持续提升品牌在关键搜索场景中的自然可见度。",
+    note: "Intent / Content / Technical SEO",
+    status: "VISIBILITY / READY",
+    output: "OUT / 搜索增长机会图谱",
   },
   {
     id: "02",
     icon: RadioTower,
-    title: "整合传播",
-    description: "将内容、媒体与落地体验对齐为统一的触达节奏，让注意力成为真实连接。",
-    note: "Narrative / Channel / Experience",
+    title: "GEO 生成式引擎优化",
+    description: "面向 AI 搜索与生成式答案场景，建设清晰的品牌实体、内容证据与可引用信息。",
+    note: "Entity / Citation / AI Visibility",
+    status: "CITATION / READY",
+    output: "OUT / AI 可见度内容框架",
   },
   {
     id: "03",
     icon: BarChart3,
-    title: "效果投放",
-    description: "以清晰的实验框架持续校准预算与创意，把每一轮投放变成下一轮的证据。",
-    note: "Test / Learn / Scale",
+    title: "Google Ads 效果投放",
+    description: "从关键词策略到转化追踪，持续校准搜索、展示与自动化广告系列的增长效率。",
+    note: "Search / Performance / Conversion",
+    status: "CONVERSION / ACTIVE",
+    output: "OUT / 可扩展投放路径",
   },
   {
     id: "04",
     icon: Orbit,
-    title: "数据智能",
-    description: "让分散的行为信号回到同一张增长星图，帮助团队及时判断下一步。",
-    note: "Signal / System / Decision",
+    title: "Meta Ads 社交广告",
+    description: "通过创意测试、受众分层与再营销，让社交媒体注意力转化为可衡量的业务行动。",
+    note: "Creative / Audience / Retargeting",
+    status: "AUDIENCE / ACTIVE",
+    output: "OUT / 创意与人群实验矩阵",
   },
 ];
 
@@ -67,20 +75,26 @@ const methodology = [
   {
     number: "01",
     eyebrow: "CAPTURE",
-    title: "捕获真正的信号",
-    copy: "从生意目标倒推用户旅程，识别值得被放大的真实动机，而不是追逐短暂噪声。",
+    title: "识别搜索与需求信号",
+    copy: "从搜索意图、用户旅程与竞争空间中，识别值得被内容、AI 答案与广告共同放大的真实需求。",
+    input: "IN / 需求、查询、受众信号",
+    output: "OUT / 优先级增长机会",
   },
   {
     number: "02",
     eyebrow: "CALIBRATE",
-    title: "校准增长的航线",
-    copy: "用策略、内容与媒介形成同一套决策坐标，让每个接触点都知道自己正在推动什么。",
+    title: "校准内容与广告航线",
+    copy: "用 SEO 结构、GEO 内容证据与广告创意形成同一套决策坐标，让每次触达知道自己正在推动什么。",
+    input: "IN / 内容、页面、创意资产",
+    output: "OUT / 协同触达航线",
   },
   {
     number: "03",
     eyebrow: "AMPLIFY",
-    title: "放大已经验证的势能",
-    copy: "以持续实验积累确定性，在有效方向上递进投入，将偶然成果变成可复制的系统。",
+    title: "放大已验证的转化势能",
+    copy: "以归因与持续实验积累确定性，在有效方向上递进投入，将单次成果变成可复制的增长系统。",
+    input: "IN / 转化、成本、归因数据",
+    output: "OUT / 可扩展增长效率",
   },
 ];
 
@@ -194,21 +208,21 @@ export default function Home() {
           <div className="max-w-[720px]">
             <div className="mb-7 flex items-center gap-3 font-mono text-[0.68rem] font-medium tracking-[0.16em] text-[#77ddf7]">
               <span className="signal-dot" />
-              AST/01 — DIGITAL GROWTH NAVIGATION
+              AST/01 — SEO / GEO / PAID MEDIA
             </div>
             <h1 className="font-display max-w-[700px] text-[clamp(3.4rem,7.1vw,7.1rem)] font-semibold leading-[0.93] tracking-[-0.075em] text-white">
-              让每一次触达，<br />
+              让每一次搜索、点击与触达，<br />
               都指向<span className="text-gradient-cyan">增长。</span>
             </h1>
             <p className="mt-8 max-w-[525px] text-base leading-8 text-white/68 sm:text-lg">
-              Astral 帮助成长型品牌将洞察、内容与投放连成一条清晰航线，让复杂的数字营销变得可见、可控、可放大。
+              Astral 将 SEO、GEO、Google Ads、Meta Ads 与数据归因连成一条清晰航线，让搜索可见度、广告转化与品牌增长协同发生。
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <button type="button" onClick={() => scrollToSection("capabilities")} className="group inline-flex items-center justify-center gap-3 bg-[#00c7ff] px-6 py-4 font-mono text-xs font-bold tracking-[0.12em] text-[#041128] transition-all duration-200 hover:-translate-y-1 hover:bg-[#76e5ff] active:scale-[0.97]">
-                探索能力 <ArrowDownRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-y-0.5 group-hover:translate-x-0.5" />
+                获取服务地图 <ArrowDownRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-y-0.5 group-hover:translate-x-0.5" />
               </button>
               <button type="button" onClick={handleConsultation} className="group inline-flex items-center justify-center gap-3 border border-white/20 bg-white/[0.04] px-6 py-4 font-mono text-xs font-medium tracking-[0.12em] text-white transition-all duration-200 hover:-translate-y-1 hover:border-white/60 hover:bg-white/[0.09] active:scale-[0.97]">
-                校准下一段航线 <ChevronRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                获取增长诊断 <ChevronRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </button>
             </div>
           </div>
@@ -216,7 +230,7 @@ export default function Home() {
 
         <div className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-[#06142f]/60 backdrop-blur-sm">
           <div className="mx-auto grid max-w-[1440px] grid-cols-2 px-5 sm:px-8 lg:grid-cols-4 lg:px-12">
-            {["策略定位", "整合传播", "效果投放", "数据智能"].map((item, index) => (
+            {["SEO", "GEO", "Google Ads", "Meta Ads"].map((item, index) => (
               <div key={item} className="flex items-center gap-3 border-r border-white/10 py-5 last:border-r-0 lg:py-6">
                 <span className="font-mono text-[0.63rem] text-[#00c7ff]/80">0{index + 1}</span>
                 <span className="text-sm text-white/72">{item}</span>
@@ -228,7 +242,7 @@ export default function Home() {
 
       <section className="relative overflow-hidden border-y border-white/10 bg-[#091b3b] py-7">
         <div className="marquee-track flex items-center gap-10 whitespace-nowrap font-mono text-[0.7rem] tracking-[0.17em] text-white/55">
-          {["INSIGHT INTO ACTION", "SIGNAL OVER NOISE", "MEASURE WHAT MOVES", "MAKE GROWTH VISIBLE", "INSIGHT INTO ACTION", "SIGNAL OVER NOISE", "MEASURE WHAT MOVES", "MAKE GROWTH VISIBLE"].map((item, index) => (
+          {["SEARCH TO ACTION", "AI DISCOVERY", "PAID MEDIA SIGNALS", "MEASURE THE PATH", "SEARCH TO ACTION", "AI DISCOVERY", "PAID MEDIA SIGNALS", "MEASURE THE PATH"].map((item, index) => (
             <span key={`${item}-${index}`} className="flex items-center gap-10"><CircleDot className="h-3.5 w-3.5 text-[#00c7ff]" />{item}</span>
           ))}
         </div>
@@ -241,11 +255,11 @@ export default function Home() {
             <div>
               <p className="eyebrow-dark">ASTRAL CAPABILITIES / 2026</p>
               <h2 className="mt-5 max-w-[550px] font-display text-5xl font-semibold leading-[0.98] tracking-[-0.065em] sm:text-6xl">
-                从一束信号，<br />到一套增长系统。
+                从自然可见，<br />到一套增长系统。
               </h2>
             </div>
             <p className="max-w-[530px] border-l border-[#0b1c3d]/18 pl-6 text-base leading-8 text-[#0b1c3d]/67 sm:text-lg">
-              我们不是把渠道叠加在一起，而是用一套共同的判断逻辑，让品牌、内容、媒介与数据在同一张星图上协同运行。
+              我们不把 SEO、AI 搜索与付费媒体割裂处理，而是用一套共同的判断逻辑，让内容、广告与数据在同一张增长星图上协同运行。
             </p>
           </div>
 
@@ -256,17 +270,21 @@ export default function Home() {
               const offsetClasses = ["lg:col-span-3 lg:mt-0", "lg:col-span-3 lg:mt-16", "lg:col-span-3 lg:mt-7", "lg:col-span-3 lg:mt-24"];
               return (
                 <article key={item.id} className={`capability-card group relative min-h-[320px] border border-[#0b1c3d]/16 bg-[#f8faff] px-6 py-7 sm:px-7 lg:min-h-[372px] lg:px-8 ${offsetClasses[index]}`}>
-                  <div className="flex items-center justify-between border-b border-[#0b1c3d]/11 pb-4">
+                  <div className="flex items-center justify-between gap-2 border-b border-[#0b1c3d]/11 pb-4">
                     <span className="font-mono text-[0.61rem] tracking-[0.12em] text-[#0b1c3d]/45">NODE_{item.id}</span>
+                    <span className="panel-state">{item.status}</span>
                     <Icon className="h-5 w-5 text-[#00a9dc] transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" strokeWidth={1.6} />
                   </div>
                   <div className="mt-14">
                     <h3 className="font-display text-2xl font-semibold tracking-[-0.045em]">{item.title}</h3>
                     <p className="mt-4 text-sm leading-7 text-[#0b1c3d]/66">{item.description}</p>
                   </div>
-                  <div className="absolute bottom-7 left-6 right-6 flex items-center justify-between border-t border-[#0b1c3d]/11 pt-4 sm:left-7 sm:right-7 lg:left-8 lg:right-8">
-                    <p className="font-mono text-[0.55rem] tracking-[0.1em] text-[#0b1c3d]/42">{item.note}</p>
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#00c7ff] shadow-[0_0_0_4px_rgba(0,199,255,0.12)]" />
+                  <div className="absolute bottom-7 left-6 right-6 border-t border-[#0b1c3d]/11 pt-4 sm:left-7 sm:right-7 lg:left-8 lg:right-8">
+                    <div className="flex items-center justify-between">
+                      <p className="font-mono text-[0.55rem] tracking-[0.1em] text-[#0b1c3d]/42">{item.note}</p>
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#00c7ff] shadow-[0_0_0_4px_rgba(0,199,255,0.12)]" />
+                    </div>
+                    <p className="card-output">{item.output}</p>
                   </div>
                 </article>
               );
@@ -290,19 +308,19 @@ export default function Home() {
             <div className="lg:pl-12">
               <p className="eyebrow-light">PERSPECTIVE / SIGNAL OVER NOISE</p>
               <h2 className="mt-5 max-w-[620px] font-display text-5xl font-semibold leading-[0.99] tracking-[-0.065em] text-white sm:text-6xl">
-                数据不该只是报告，<br />它应该<span className="text-[#77ddf7]">改变判断。</span>
+                曝光不该只是报表，<br />它应该<span className="text-[#77ddf7]">推动下一次行动。</span>
               </h2>
               <p className="mt-7 max-w-[585px] text-base leading-8 text-white/63 sm:text-lg">
-                当营销系统拥有共同坐标，团队才能把精力从“看见了什么”转移到“下一步应该推进什么”。Astral 让洞察能够真正参与决策。
+                当搜索排名、AI 可见度、广告点击与转化拥有共同坐标，团队才能从“看见了什么”转向“下一步应该推进什么”。Astral 让信号真正参与决策。
               </p>
               <div className="mt-10 grid max-w-[565px] grid-cols-2 gap-x-7 gap-y-6 border-t border-white/15 pt-6">
                 <div>
                   <p className="font-mono text-[0.61rem] tracking-[0.14em] text-white/43">INPUT</p>
-                  <p className="mt-2 text-sm text-white/84">业务目标与用户动机</p>
+                  <p className="mt-2 text-sm text-white/84">搜索意图、AI 可见度与广告信号</p>
                 </div>
                 <div>
                   <p className="font-mono text-[0.61rem] tracking-[0.14em] text-white/43">OUTPUT</p>
-                  <p className="mt-2 text-sm text-white/84">更清晰的增长行动</p>
+                  <p className="mt-2 text-sm text-white/84">可验证的增长决策</p>
                 </div>
               </div>
             </div>
@@ -318,7 +336,7 @@ export default function Home() {
               <p className="eyebrow-dark">THE ASTRAL METHOD</p>
               <h2 className="mt-5 font-display text-5xl font-semibold leading-[0.98] tracking-[-0.065em] sm:text-6xl">把不确定，<br />导向可验证的下一步。</h2>
             </div>
-            <p className="max-w-[430px] text-base leading-8 text-[#0b1c3d]/65">一套不依赖口号的工作节奏：捕获值得相信的信号，校准决策坐标，再把有效势能稳定地放大。</p>
+            <p className="max-w-[430px] text-base leading-8 text-[#0b1c3d]/65">一套连接自然搜索、AI 搜索与付费媒介的工作节奏：捕获值得相信的信号，校准决策坐标，再把有效势能稳定地放大。</p>
           </div>
 
           <div className="relative mt-16 grid gap-4 border-t border-[#0b1c3d]/15 pt-4 lg:grid-cols-[1.05fr_0.9fr_1.05fr] lg:gap-5">
@@ -332,9 +350,13 @@ export default function Home() {
                 <p className="mt-10 font-mono text-[0.62rem] font-semibold tracking-[0.17em] text-[#008ec0]">{step.eyebrow}</p>
                 <h3 className="mt-4 max-w-[270px] font-display text-3xl font-semibold leading-[1.02] tracking-[-0.05em]">{step.title}</h3>
                 <p className="mt-5 max-w-[320px] text-sm leading-7 text-[#0b1c3d]/64">{step.copy}</p>
-                <div className="mt-10 flex items-center justify-between border-t border-[#0b1c3d]/11 pt-4">
-                  <span className="font-mono text-[0.58rem] tracking-[0.1em] text-[#0b1c3d]/47">INPUT → OUTPUT</span>
-                  <ArrowUpRight className="h-3.5 w-3.5 text-[#008ec0]" />
+                <div className="mt-10 border-t border-[#0b1c3d]/11 pt-4">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[0.58rem] tracking-[0.1em] text-[#0b1c3d]/47">INPUT → OUTPUT</span>
+                    <ArrowUpRight className="h-3.5 w-3.5 text-[#008ec0]" />
+                  </div>
+                  <p className="mt-2 font-mono text-[0.53rem] tracking-[0.08em] text-[#0b1c3d]/47">{step.input}</p>
+                  <p className="mt-1 font-mono text-[0.53rem] tracking-[0.08em] text-[#008ec0]">{step.output}</p>
                 </div>
               </article>
             ))}
@@ -350,9 +372,9 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-[1240px] gap-10 lg:grid-cols-[1fr_0.7fr] lg:items-end">
           <div>
             <p className="eyebrow-light">CONTENT THAT TRAVELS</p>
-            <h2 className="mt-5 max-w-[650px] font-display text-5xl font-semibold leading-[0.97] tracking-[-0.065em] text-white sm:text-6xl">内容不是一张海报，<br />而是一股<span className="text-[#77ddf7]">持续抵达</span>的力量。</h2>
+            <h2 className="mt-5 max-w-[650px] font-display text-5xl font-semibold leading-[0.97] tracking-[-0.065em] text-white sm:text-6xl">内容不止是一张海报，<br />也是搜索、AI 与广告共同的<span className="text-[#77ddf7]">增长资产。</span></h2>
           </div>
-          <p className="max-w-[410px] border-l border-[#00c7ff]/60 pl-5 text-base leading-8 text-white/72">从表达结构到分发机制，我们设计能够被理解、被讨论、被下一次行动继承的内容资产。</p>
+          <p className="max-w-[410px] border-l border-[#00c7ff]/60 pl-5 text-base leading-8 text-white/72">从内容结构到广告素材与分发机制，我们设计能够被搜索、被 AI 理解、被用户点击，并持续产生行动的内容资产。</p>
         </div>
       </section>
 
@@ -363,10 +385,10 @@ export default function Home() {
         <div className="relative mx-auto flex max-w-[1240px] flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
           <div>
             <p className="flex items-center gap-3 font-mono text-[0.68rem] font-semibold tracking-[0.16em] text-[#8fe9fb]"><Sparkles className="h-4 w-4" /> SIGNAL LOCKED / NEXT COORDINATE</p>
-            <h2 className="mt-5 max-w-[790px] font-display text-5xl font-semibold leading-[0.95] tracking-[-0.07em] sm:text-7xl">校准下一段<br />增长航线。</h2>
+            <h2 className="mt-5 max-w-[790px] font-display text-5xl font-semibold leading-[0.95] tracking-[-0.07em] sm:text-7xl">构建你的搜索与投放<br />增长系统。</h2>
           </div>
           <button type="button" onClick={handleConsultation} className="group inline-flex min-w-[220px] items-center justify-between bg-[#00c7ff] px-6 py-5 font-mono text-xs font-semibold tracking-[0.13em] text-[#041128] transition-all duration-200 hover:-translate-y-1 hover:bg-[#8beaff] active:scale-[0.97]">
-            启动策略对话 <Send className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+            预约服务诊断 <Send className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
           </button>
         </div>
       </section>
@@ -378,7 +400,7 @@ export default function Home() {
               <img src={assets.mark} alt="Astral" className="h-9 w-9 object-contain" />
               <span className="wordmark">A<span>stral</span></span>
             </div>
-            <p className="mt-3 text-sm text-white/43">张家港星界维度科技有限公司 · 数字增长营销</p>
+            <p className="mt-3 text-sm text-white/43">张家港星界维度科技有限公司 · SEO、GEO 与全域广告增长</p>
           </div>
           <div className="flex flex-wrap gap-x-7 gap-y-3 font-mono text-[0.62rem] tracking-[0.13em] text-white/43">
             <span>© 2026 ASTRAL</span>
